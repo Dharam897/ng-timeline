@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { TimelineService } from './services/timeline.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    TimelineService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

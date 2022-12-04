@@ -1,6 +1,6 @@
 .linkedin-timeline{
     margin-top:80px;
-    padding: 10px;
+    padding: 25px;
     border: 1px solid #E0DFDC;
     border-radius: 10px;
 }
@@ -10,6 +10,7 @@
     font-size: 21px;;
     font-family: 'Open Sans';
     font-weight: 600;
+    margin-bottom: 15px;
 }
 ul{
     list-style: none;
@@ -29,15 +30,78 @@ ul.comapnies > li:not(:last-child){
 .duration,
 .job-location,
 .job-description{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans';    
+}
+
+.company{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
 }
 
 .company-name{
     font-size: 16px;
 }
 
-.job-description{
+.company-logo{
+    width: 55px;
+    height: 55px;
+}
+.company-logo img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+.company-info{
+    flex: 1;
+}
+.designation{
+    font-weight: bold;  
+}
+.job-location{
     font-size: 13px;
+    color: rgba(0,0,0,0.5);
+}
+.duration{
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.job-description{
+    font-size: 12px;
     color: rgba(0,0,0,0.9);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
+    margin-top: 15px;
+}
+ul.experiences{
+    position: relative;
+    margin: 25px;
+}
+ul.experiences::after {
+    content: "";
+    width: 5px;
+    background: #EEEEEE;
+    position: absolute;
+    top: 20px;
+    left: -49px;
+    bottom: 15px;
+}
+ul.experiences > li{
+    position: relative;
+}
+ul.experiences > li::after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #C5C2BC;
+    position: absolute;
+    left: -54px;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+ul.experiences > li:not(:last-child){
+    margin-bottom: 15px;
 }

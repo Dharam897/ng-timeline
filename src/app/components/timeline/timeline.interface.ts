@@ -8,4 +8,5 @@ export interface IExperience {
 export interface ICompany {
     experiences: IExperience[],
     companyName: string;
+    companyLogo: string;
 }
