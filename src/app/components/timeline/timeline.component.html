@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="linkedin-timeline">
+        <h1 class="timeline">{{title}}</h1>
+
+        <ul class="comapnies">
+            <li *ngFor="let company of comapnies;">
+                <div class="company-name">{{company.companyName}}</div>
+                <ul class="experiences">
+                    <li *ngFor="let experience of company.experiences;">
+                        <div class="experience">
+                            <div class="designation" *ngIf="experience.designation">{{experience.designation}}</div>
+                            <div class="duration" *ngIf="experience.duration">{{experience.duration}}</div>
+                            <div class="job-location" *ngIf="experience.jobLocation">{{experience.jobLocation}}</div>
+                            <div class="job-description" *ngIf="experience.jobDescription">{{experience.jobDescription}}</div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>    
+</div>

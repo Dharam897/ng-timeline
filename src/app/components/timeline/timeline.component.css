@@ -1,0 +1,43 @@
+.linkedin-timeline{
+    margin-top:80px;
+    padding: 10px;
+    border: 1px solid #E0DFDC;
+    border-radius: 10px;
+}
+
+
+.timeline{
+    font-size: 21px;;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.comapnies > li:not(:last-child){
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E0DFDC;
+}
+
+.timeline,
+.company-name,
+.designation,
+.duration,
+.job-location,
+.job-description{
+    font-family: 'Open Sans';
+}
+
+.company-name{
+    font-size: 16px;
+}
+
+.job-description{
+    font-size: 13px;
+    color: rgba(0,0,0,0.9);
+    letter-spacing: 0.5px;
+}
